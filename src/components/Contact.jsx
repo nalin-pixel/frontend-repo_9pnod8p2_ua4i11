@@ -11,15 +11,15 @@ function Contact() {
           <div className="mt-8 space-y-4">
             <div className="flex items-center gap-3 text-slate-700">
               <Phone className="w-5 h-5 text-blue-600" />
-              <span>+1 (555) 123-4567</span>
+              <span>+92 323 8994409</span>
             </div>
             <div className="flex items-center gap-3 text-slate-700">
               <Mail className="w-5 h-5 text-blue-600" />
-              <span>support@techsphere.com</span>
+              <span>ahmad78900akram@gmail.com</span>
             </div>
             <div className="flex items-center gap-3 text-slate-700">
               <MapPin className="w-5 h-5 text-blue-600" />
-              <span>123 Innovation Drive, Suite 200, San Francisco, CA</span>
+              <span>Rex city, Ground floor, SK computer</span>
             </div>
           </div>
         </div>

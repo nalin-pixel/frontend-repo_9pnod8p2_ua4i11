@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -16,8 +16,8 @@ function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="h-16 flex items-center justify-between">
           <a href="#home" className="flex items-center gap-2">
-            <div className="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold shadow-lg">IT</div>
-            <span className="text-slate-900 font-semibold text-lg">TechSphere</span>
+            <div className="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold shadow-lg">SK</div>
+            <span className="text-slate-900 font-semibold text-lg">SK Laptop</span>
           </a>
 
           <nav className="hidden md:flex items-center gap-8">
@@ -26,8 +26,9 @@ function Header() {
                 {item.label}
               </a>
             ))}
-            <a href="#contact" className="inline-flex items-center px-4 py-2 rounded-md bg-blue-600 text-white shadow hover:bg-blue-700 transition-colors">
-              Get a Quote
+            <a href="tel:+923238994409" className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-blue-600 text-white shadow hover:bg-blue-700 transition-colors">
+              <Phone className="w-4 h-4" />
+              Call Now
             </a>
           </nav>
 
@@ -44,8 +45,9 @@ function Header() {
                   {item.label}
                 </a>
               ))}
-              <a href="#contact" onClick={() => setOpen(false)} className="px-3 py-2 rounded-md bg-blue-600 text-white text-center">
-                Request Service
+              <a href="tel:+923238994409" onClick={() => setOpen(false)} className="px-3 py-2 rounded-md bg-blue-600 text-white text-center inline-flex items-center justify-center gap-2">
+                <Phone className="w-4 h-4" />
+                Call Now
               </a>
             </div>
           </div>
